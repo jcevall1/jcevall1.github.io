@@ -3,82 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Home - Jordy Cevallos</title>
+    <title>Personal Webpage - Jordy Cevallos</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            box-sizing: border-box;
         }
         header {
-            background-color: #6b86af;
+            background-color: #333;
             color: white;
-            padding: 10px 0;
+            padding: 10px 20px;
             text-align: center;
         }
-        .container {
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+        nav ul li {
+            float: left;
+        }
+        nav ul li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        nav ul li a:hover {
+            background-color: #111;
+        }
+        section {
             padding: 20px;
-            max-width: 800px;
-            margin: auto;
-            background: white;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        h1 {
-            color: #333;
-        }
-        p {
-            line-height: 1.6;
+            margin: 20px;
         }
         footer {
-            background-color: #6b86af;
+            background-color: #333;
             color: white;
             text-align: center;
-            padding: 10px 0;
-            position: relative;
+            padding: 10px 20px;
+            position: fixed;
             bottom: 0;
             width: 100%;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Jordy Cevallos</h1>
-    </header>
-    <div class="container">
-        <h1 id="welcome-message">About Me</h1>
-        <img src="pic1.png" alt="Profile Picture" style="width:150px;height:auto;border-radius:50%;">
-        <p>PhD student in Applied Mathematics at Arizona State University</p>
-        <h2>My Interests</h2>
-        <p>Include some information about your interests, hobbies, or anything else you'd like to share.</p>
-        <h2>My Skills</h2>
+
+<header>
+    <h1>Jordy Cevallos</h1>
+    <nav>
         <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
         </ul>
-        <h2>My Projects</h2>
-        <table>
-            <tr>
-                <th>Project</th>
-                <th>Description</th>
-            </tr>
-            <tr>
-                <td>Project 1</td>
-                <td>A web application for tracking tasks.</td>
-            </tr>
-            <tr>
-                <td>Project 2</td>
-                <td>A personal blog site.</td>
-            </tr>
-        </table>
-        <p>Visit my <a href="https://github.com/jcevall1">GitHub profile</a>.</p>
-        <p><a href="home.html">Home</a></p>
-    </div>
-    <footer>
-        <p>&copy; 2024 Jordy Cevallos. All rights reserved.</p>
-    </footer>
-    <script src="script.js"></script>
+    </nav>
+</header>
+
+<section id="home" class="hero">
+    <img src="pic1.png" alt="Your Photo">
+    <h1>Welcome to my personal webpage</h1>
+    <p>I am Jordy Cevallos, a Ph.D. student in Applied Mathematics for Life and Social Sciences.</p>
+</section>
+
+<footer>
+    <p>© 2024 Jordy Cevallos. All Rights Reserved.</p>
+    <p><a href="https://www.researchgate.net/profile/Jordy-Cevallos-Chavez">ResearchGate</a> | <a href="https://scholar.google.com/citations?hl=en&user=RWNKJT4AAAAJ&view_op=list_works&sortby=pubdate">Google Scholar</a> | <a href="contact.html">Contact Information</a></p>
+</footer>
+
 </body>
 </html>
-
