@@ -5,14 +5,16 @@ body {
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    min-height: 100vh; /* Ensures the body is at least as tall as the viewport */
 }
+
 header {
     background-color: #333;
     color: white;
     padding: 10px 20px;
     text-align: center;
 }
+
 nav ul {
     list-style-type: none;
     margin: 0;
@@ -20,9 +22,11 @@ nav ul {
     overflow: hidden;
     background-color: #333;
 }
+
 nav ul li {
     float: left;
 }
+
 nav ul li a {
     display: block;
     color: white;
@@ -30,52 +34,63 @@ nav ul li a {
     padding: 14px 16px;
     text-decoration: none;
 }
+
 nav ul li a:hover {
     background-color: #111;
 }
+
 section {
     padding: 20px;
     margin: 20px;
-    flex: 1;
+    flex: 1; /* Allows the section to grow and take available space */
 }
+
 footer {
     background-color: #333;
     color: white;
     text-align: center;
     padding: 10px 20px;
-   bottom: 0;
     width: 100%;
+    margin-top: auto; /* Pushes footer to the bottom when content is less */
 }
+
 .hero {
     text-align: center;
     padding: 50px 20px;
     background: #f4f4f4;
 }
+
 .hero img {
     border-radius: 50%;
     width: 150px;
     height: 150px;
 }
+
 .hero h1 {
     margin: 20px 0 10px;
 }
+
 .hero p {
     font-size: 1.2em;
 }
+
 .projects img {
     width: 100%;
     height: auto;
 }
+
 .contact-form {
     max-width: 600px;
     margin: 0 auto;
 }
+
 .contact-form input, .contact-form textarea {
     width: 100%;
     padding: 10px;
     margin: 5px 0;
     box-sizing: border-box;
 }
+
 .contact-form button {
     padding: 10px 20px;
     background-color: #333;
@@ -83,9 +98,11 @@ footer {
     border: none;
     cursor: pointer;
 }
+
 .contact-form button:hover {
     background-color: #555;
 }
+
 .social-media a {
     margin: 0 10px;
     color: #333;
