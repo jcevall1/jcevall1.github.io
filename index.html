@@ -14,22 +14,29 @@
             flex-direction: column;
             min-height: 100vh; /* Ensures the body is at least as tall as the viewport */
         }
+
         header {
             background-color: #333;
             color: white;
             padding: 10px 20px;
             text-align: center;
+            width: 100%; /* Full width of the viewport */
         }
+
         nav ul {
             list-style-type: none;
             margin: 0;
             padding: 0;
             overflow: hidden;
             background-color: #333;
+            display: flex;
+            justify-content: center; /* Centers the navigation items */
         }
+
         nav ul li {
-            float: left;
+            display: inline-block;
         }
+
         nav ul li a {
             display: block;
             color: white;
@@ -37,14 +44,20 @@
             padding: 14px 16px;
             text-decoration: none;
         }
+
         nav ul li a:hover {
             background-color: #111;
         }
+
         section {
             padding: 20px;
-            margin: 20px;
-            flex: 1; /* Allows the section to grow and take available space */
+            margin: 0 auto; /* Centers the section horizontally */
+            flex: 1;
+            width: 100%; /* Full width of the section within viewport */
+            max-width: 1200px; /* Optional: set a maximum width to keep content readable */
+            box-sizing: border-box; /* Includes padding in the width calculation */
         }
+
         footer {
             background-color: #333;
             color: white;
@@ -52,6 +65,64 @@
             padding: 10px 20px;
             width: 100%;
             margin-top: auto; /* Pushes footer to the bottom when content is less */
+        }
+
+        .hero {
+            text-align: center;
+            padding: 50px 20px;
+            background: #f4f4f4;
+            margin: 0 auto; /* Centers the hero section horizontally */
+            max-width: 1200px; /* Sets a maximum width for the hero section */
+            width: 100%; /* Full width of the hero section within the max-width */
+        }
+
+        .hero img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+        }
+
+        .hero h1 {
+            margin: 20px 0 10px;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+        }
+
+        .projects img {
+            width: 100%;
+            height: auto;
+        }
+
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            box-sizing: border-box;
+        }
+
+        .contact-form button {
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .contact-form button:hover {
+            background-color: #555;
+        }
+
+        .social-media a {
+            margin: 0 10px;
+            color: #333;
+            text-decoration: none;
         }
     </style>
 </head>
