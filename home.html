@@ -10,12 +10,19 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Centers content horizontally */
+            min-height: 100vh; /* Ensures the body is at least as tall as the viewport */
+            text-align: center; /* Centers text inside content */
         }
         header {
             background-color: #333;
             color: white;
             padding: 10px 20px;
             text-align: center;
+            width: 100%; /* Ensures header takes the full width */
+            max-width: 1200px; /* Optional: limit the width for better appearance */
         }
         nav ul {
             list-style-type: none;
@@ -23,9 +30,12 @@
             padding: 0;
             overflow: hidden;
             background-color: #333;
+            display: flex;
+            justify-content: center; /* Centers the navigation links */
+            width: 100%;
         }
         nav ul li {
-            float: left;
+            display: inline-block;
         }
         nav ul li a {
             display: block;
@@ -40,15 +50,66 @@
         section {
             padding: 20px;
             margin: 20px;
+            flex: 1; /* Allows the section to grow and take available space */
+            width: 100%; /* Ensures section takes full width */
+            max-width: 1200px; /* Optional: limit the width for better appearance */
+            box-sizing: border-box; /* Ensures padding is included in width */
         }
         footer {
             background-color: #333;
             color: white;
             text-align: center;
             padding: 10px 20px;
-            position: fixed;
-            bottom: 0;
             width: 100%;
+            max-width: 1200px; /* Optional: limit the width for better appearance */
+            margin-top: auto; /* Pushes footer to the bottom when content is less */
+        }
+        .hero {
+            text-align: center;
+            padding: 50px 20px;
+            background: #f4f4f4;
+            width: 100%;
+            max-width: 1200px; /* Optional: limit the width for better appearance */
+        }
+        .hero img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+        }
+        .hero h1 {
+            margin: 20px 0 10px;
+        }
+        .hero p {
+            font-size: 1.2em;
+        }
+        .projects img {
+            width: 100%;
+            height: auto;
+        }
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            box-sizing: border-box;
+        }
+        .contact-form button {
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .contact-form button:hover {
+            background-color: #555;
+        }
+        .social-media a {
+            margin: 0 10px;
+            color: #333;
+            text-decoration: none;
         }
     </style>
 </head>
@@ -71,10 +132,9 @@
     <h1>Welcome to my personal webpage</h1>
     <p>I am Jordy Cevallos, a Ph.D. student in Applied Mathematics for Life and Social Sciences.</p>
     <p><a href="https://drive.google.com/file/d/1qsoSsHLB5BVmITDVcPG4FnvswsnsWA9p/view?usp=sharing">CV </a></p>
-    
 </section>
 
-    <section id="about">
+<section id="about">
     <h2>About Me</h2>
     <h3>Education</h3>
     <p>Ph.D. in Applied Mathematics for Life and Social Sciences<br>
@@ -91,18 +151,17 @@
 
     <h3>Awards</h3>
     <ul>
-
-         <li> School of Complex Adaptive Systems, Graduate Fellowship award (Fall 2024).</li>
-         <li> Institute for Mathematics and Statistical Innovation. IMSI Internship at University of Illinois Urbana-Champaign (Summer 2024).</li>
-         <li>Arizona State University Graduate Fellowship award (May 2024).</li>
-         <li> Institute for Mathematics and Statistical Innovation Travel Award (Aug 2023).</li>
-         <li> Graduate and Professional Student Association Assembly Service Award (May 2023).</li>
+        <li> School of Complex Adaptive Systems, Graduate Fellowship award (Fall 2024).</li>
+        <li> Institute for Mathematics and Statistical Innovation. IMSI Internship at University of Illinois Urbana-Champaign (Summer 2024).</li>
+        <li>Arizona State University Graduate Fellowship award (May 2024).</li>
+        <li> Institute for Mathematics and Statistical Innovation Travel Award (Aug 2023).</li>
+        <li> Graduate and Professional Student Association Assembly Service Award (May 2023).</li>
         <li>SHESC Travel Award, School of Human Evolution and Social Change (Aug 2022).</li>
         <li>Cum Laude (9.3/10), Universidad de Investigación de Tecnología Experimental Yachay (Sep 2019).</li>
         <li>IFTH undergraduate scholarship, Ecuadorian Secretary of Higher Education, Science, Technology and Innovation (2014-2019).</li>
     </ul>
 
-   <h3>Extracurricular Activities & Leadership</h3>
+    <h3>Extracurricular Activities & Leadership</h3>
     <ul>
         <li>Vice President of the SIAM Student Chapter at ASU (2023-2025).</li>
         <li>Graduate and Professional Student Association (GPSA) Supreme Court Justice (2023-2024).</li>
