@@ -13,6 +13,7 @@ header {
     color: white;
     padding: 10px 20px;
     text-align: center;
+    width: 100%; /* Full width of the viewport */
 }
 
 nav ul {
@@ -21,10 +22,12 @@ nav ul {
     padding: 0;
     overflow: hidden;
     background-color: #333;
+    display: flex;
+    justify-content: center; /* Centers the navigation items */
 }
 
 nav ul li {
-    float: left;
+    display: inline-block;
 }
 
 nav ul li a {
@@ -41,8 +44,11 @@ nav ul li a:hover {
 
 section {
     padding: 20px;
-    margin: 20px;
-    flex: 1; /* Allows the section to grow and take available space */
+    margin: 0 auto; /* Centers the section horizontally */
+    flex: 1;
+    width: 100%; /* Full width of the section within viewport */
+    max-width: 1200px; /* Optional: set a maximum width to keep content readable */
+    box-sizing: border-box; /* Includes padding in the width calculation */
 }
 
 footer {
@@ -58,6 +64,9 @@ footer {
     text-align: center;
     padding: 50px 20px;
     background: #f4f4f4;
+    margin: 0 auto; /* Centers the hero section horizontally */
+    max-width: 1200px; /* Sets a maximum width for the hero section */
+    width: 100%; /* Full width of the hero section within the max-width */
 }
 
 .hero img {
