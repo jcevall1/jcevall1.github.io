@@ -1,193 +1,226 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Webpage - Jordy Cevallos</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh; /* Ensures the body is at least as tall as the viewport */
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        header {
-            background-color: #333;
-            color: white;
-            padding: 10px 20px;
-            text-align: center;
-            width: 100%; /* Full width of the viewport */
-        }
+<title>Jordy Cevallos</title>
 
-        nav ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-            background-color: #333;
-            display: flex;
-            justify-content: center; /* Centers the navigation items */
-        }
+<style>
 
-        nav ul li {
-            display: inline-block;
-        }
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
 
-        nav ul li a {
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-        }
+body{
+font-family:Arial,Helvetica,sans-serif;
+background:#f8f8f8;
+color:#222;
+}
 
-        nav ul li a:hover {
-            background-color: #111;
-        }
+header{
+background:#222;
+padding:20px;
+}
 
-        section {
-            padding: 20px;
-            margin: 0 auto; /* Centers the section horizontally */
-            flex: 1;
-            width: 100%; /* Full width of the section within viewport */
-            max-width: 1200px; /* Optional: set a maximum width to keep content readable */
-            box-sizing: border-box; /* Includes padding in the width calculation */
-        }
+header h1{
+text-align:center;
+color:white;
+font-size:3rem;
+margin-bottom:20px;
+}
 
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 10px 20px;
-            width: 100%;
-            margin-top: auto; /* Pushes footer to the bottom when content is less */
-        }
+nav ul{
+display:flex;
+justify-content:center;
+gap:40px;
+list-style:none;
+}
 
-        .hero {
-            text-align: center;
-            padding: 50px 20px;
-            background: #f4f4f4;
-            margin: 0 auto; /* Centers the hero section horizontally */
-            max-width: 1200px; /* Sets a maximum width for the hero section */
-            width: 100%; /* Full width of the hero section within the max-width */
-        }
+nav a{
+color:white;
+text-decoration:none;
+font-size:1.1rem;
+}
 
-        .hero img {
-            border-radius: 50%;
-            width: 150px;
-            height: 150px;
-        }
+nav a:hover{
+color:#d4af37;
+}
 
-        .hero h1 {
-            margin: 20px 0 10px;
-        }
+.hero{
+text-align:center;
+padding:60px 20px;
+}
 
-        .hero p {
-            font-size: 1.2em;
-        }
+.profile-pic{
+width:280px;
+height:280px;
+border-radius:50%;
+object-fit:cover;
+border:6px solid white;
+box-shadow:0 4px 20px rgba(0,0,0,.2);
+}
 
-        .projects img {
-            width: 100%;
-            height: auto;
-        }
+.hero h2{
+font-size:3rem;
+margin-top:30px;
+margin-bottom:20px;
+}
 
-        .contact-form {
-            max-width: 600px;
-            margin: 0 auto;
-        }
+.hero p{
+font-size:1.3rem;
+max-width:800px;
+margin:auto;
+}
 
-        .contact-form input, .contact-form textarea {
-            width: 100%;
-            padding: 10px;
-            margin: 5px 0;
-            box-sizing: border-box;
-        }
+.buttons{
+margin-top:30px;
+}
 
-        .contact-form button {
-            padding: 10px 20px;
-            background-color: #333;
-            color: white;
-            border: none;
-            cursor: pointer;
-        }
+.btn{
+display:inline-block;
+padding:12px 30px;
+margin:10px;
+border:2px solid #d4af37;
+border-radius:8px;
+text-decoration:none;
+color:#d4af37;
+font-weight:bold;
+transition:.3s;
+}
 
-        .contact-form button:hover {
-            background-color: #555;
-        }
+.btn:hover{
+background:#d4af37;
+color:white;
+}
 
-        .social-media a {
-            margin: 0 10px;
-            color: #333;
-            text-decoration: none;
-        }
-    </style>
+.section-title{
+text-align:center;
+font-size:2.5rem;
+margin-top:40px;
+margin-bottom:40px;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:30px;
+max-width:1200px;
+margin:auto;
+padding:20px;
+}
+
+.card{
+background:white;
+padding:30px;
+border-radius:12px;
+box-shadow:0 0 10px rgba(0,0,0,.1);
+text-align:center;
+}
+
+.card h3{
+margin-bottom:15px;
+}
+
+.card p{
+line-height:1.6;
+}
+
+footer{
+background:#222;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:60px;
+}
+
+</style>
+
 </head>
 <body>
 
 <header>
-    <h1>Jordy Cevallos</h1>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="teaching.html">Teaching</a></li>
-            <li><a href="research.html">Research</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
+
+<h1>Jordy Cevallos</h1>
+
+<nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About Me</a></li>
+<li><a href="research.html">Research</a></li>
+<li><a href="teaching.html">Teaching</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+
 </header>
 
-<section id="home" >
-    <img src="pic2.jpg" alt="Your Photo">
-    <h1>Welcome to my personal webpage</h1>
-    <p>I am Jordy Cevallos, a Ph.D. in Applied Mathematics for Life and Social Sciences.</p>
-    <p><a href="https://drive.google.com/file/d/1qsoSsHLB5BVmITDVcPG4FnvswsnsWA9p/view?usp=sharing">CV_Teaching</a>   <a href="https://drive.google.com/file/d/12n3FsmBrfFHgFk2ohD_pqN_wh-ZlfJZ_/view?usp=drive_link">CV_Postdoc</a>    <a href="https://drive.google.com/file/d/1H2q92Eo61LAkNZOlkzHG-OC2R_o369st/view?usp=sharing">Resume</a> </p> 
-<section id="about">
-    <h2>About Me</h2>
-    <h3>Education</h3>
-    <p>Ph.D. in Applied Mathematics for Life and Social Sciences<br>
-        Jan 2020- May 2025<br>
-        Arizona State University, Tempe, Arizona, United States of America.<br>
-        <i>Dissertation title: “Quantifying the Impact of Partner Selection on Viral Sexually Transmitted Infections in the United States”</i></p>
+<section class="hero">
 
-    <p>Master of Science in Applied Mathematics for Life and Social Sciences<br>
-        Jan 2020-Apr 2021<br>
-        Arizona State University, Tempe, Arizona, United States of America.<br>
-        <i>Thesis title: “The Impact of Mobility on the Dynamics of COVID-19 Outbreak in Provinces of Ecuador”</i></p>
-    <p>Bachelor of Science in Mathematics<br>
-        Apr 2014-Aug 2019<br>
-        Yachay Tech University, Urcuquí, Ecuador, 9.3/10.<br>
-        <i>Thesis title: “Concentration and Multiplicity of Solutions for a Non-Linear Schrödinger Equation with Critical Frequency: Infinite Case”</i></p>
+<img src="images/jordy.jpg"
+class="profile-pic"
+alt="Jordy Cevallos">
 
-    <h3>Awards</h3>
-    <ul>
-        <li> School of Complex Adaptive Systems, Graduate Fellowship award (Fall 2024).</li>
-        <li> Institute for Mathematics and Statistical Innovation. IMSI Internship at University of Illinois Urbana-Champaign (Summer 2024).</li>
-        <li>Arizona State University Graduate Fellowship award (May 2024).</li>
-        <li> Institute for Mathematics and Statistical Innovation Travel Award (Aug 2023).</li>
-        <li> Graduate and Professional Student Association Assembly Service Award (May 2023).</li>
-        <li>SHESC Travel Award, School of Human Evolution and Social Change (Aug 2022).</li>
-        <li>Cum Laude (9.3/10), Universidad de Investigación de Tecnología Experimental Yachay (Sep 2019).</li>
-        <li>IFTH undergraduate scholarship, Ecuadorian Secretary of Higher Education, Science, Technology and Innovation (2014-2019).</li>
-    </ul>
+<h2>Welcome to my personal webpage</h2>
 
-    <h3>Extracurricular Activities & Leadership</h3>
-    <ul>
-        <li>Vice President of the SIAM Student Chapter at ASU (2023-2025).</li>
-        <li>Graduate and Professional Student Association (GPSA) Supreme Court Justice (2023-2024).</li>
-        <li>President of the SIAM Student Chapter at ASU (2021-2023).</li>
-        <li>Graduate and Professional Student Association (GPSA) Assembly member (2022-2023).</li>
-        <li>Association of All Graduate Students at ASU Applied Mathematics for the Life and Social Sciences (2021-2023).</li>
-        <li>Inaugural President of Alumni Yachay Tech.</li>
-    </ul>
+<p>
+I am Jordy Cevallos, Ph.D. in Applied Mathematics for Life and Social Sciences.
+My research focuses on mathematical modeling, epidemiology,
+social dynamics, and data-driven approaches.
+</p>
+
+<div class="buttons">
+
+<a href="files/CV.pdf" class="btn">CV</a>
+
+<a href="teaching.html" class="btn">Teaching</a>
+
+<a href="files/Postdoc_CV.pdf" class="btn">Postdoc Resume</a>
+
+</div>
+
 </section>
 
+<h2 class="section-title">About Me</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Education</h3>
+<p>
+Ph.D. Applied Mathematics<br>
+Arizona State University
+</p>
+</div>
+
+<div class="card">
+<h3>Research</h3>
+<p>
+Mathematical Modeling,
+Epidemiology,
+Social Dynamics,
+Network Science.
+</p>
+</div>
+
+<div class="card">
+<h3>Publications</h3>
+<p>
+Peer-reviewed publications in
+epidemiology,
+ecology,
+and mathematical biology.
+</p>
+</div>
+
+</div>
+
 <footer>
-    <p>© 2024 Jordy Cevallos. All Rights Reserved.</p>
-    <p><a href="https://www.researchgate.net/profile/Jordy-Cevallos-Chavez">ResearchGate</a> | <a href="https://scholar.google.com/citations?hl=en&user=RWNKJT4AAAAJ&view_op=list_works&sortby=pubdate">Google Scholar</a> | <a href="contact.html">Contact Information</a></p>
+
+<p>© 2025 Jordy Cevallos. All Rights Reserved.</p>
+
 </footer>
 
 </body>
