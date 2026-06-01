@@ -117,3 +117,85 @@ footer {
     color: #333;
     text-decoration: none;
 }
+
+
+.page-hero{
+text-align:center;
+padding:70px 20px;
+background:linear-gradient(135deg,#ffffff,#f4f4f4);
+}
+
+.page-hero h2{
+font-size:3rem;
+margin-bottom:15px;
+}
+
+.page-hero p{
+font-size:1.2rem;
+max-width:800px;
+margin:0 auto;
+line-height:1.6;
+}
+
+.content-wrapper{
+max-width:1100px;
+margin:50px auto;
+padding:0 20px;
+}
+
+.research-card{
+background:white;
+padding:35px;
+margin-bottom:35px;
+border-radius:14px;
+box-shadow:0 4px 18px rgba(0,0,0,.08);
+}
+
+.research-card h3{
+font-size:2rem;
+margin-bottom:25px;
+border-bottom:3px solid #d4af37;
+display:inline-block;
+padding-bottom:8px;
+}
+
+.publication-list li{
+margin-bottom:24px;
+line-height:1.6;
+}
+
+.publication-list a,
+footer a{
+color:#b8860b;
+}
+
+.poster-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:25px;
+}
+
+.poster-card{
+display:block;
+padding:25px;
+border:2px solid #d4af37;
+border-radius:12px;
+text-decoration:none;
+color:#222;
+transition:.3s;
+}
+
+.poster-card:hover{
+background:#d4af37;
+color:white;
+transform:translateY(-4px);
+}
+
+.poster-card h4{
+font-size:1.3rem;
+margin-bottom:10px;
+}
+
+.active{
+color:#d4af37;
+}
