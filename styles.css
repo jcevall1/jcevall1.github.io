@@ -355,3 +355,33 @@ footer a:hover{
         gap:15px;
     }
 }
+
+
+.teaching-term{
+    margin-bottom:35px;
+    padding-bottom:25px;
+    border-bottom:1px solid #eee;
+}
+
+.teaching-term h4{
+    font-size:1.35rem;
+    color:#1f3b73;
+    margin-bottom:12px;
+}
+
+.teaching-term ul{
+    padding-left:25px;
+}
+
+.teaching-term li{
+    margin-bottom:10px;
+}
+
+.teaching-term a{
+    color:#b8860b;
+    text-decoration:none;
+}
+
+.teaching-term a:hover{
+    text-decoration:underline;
+}
